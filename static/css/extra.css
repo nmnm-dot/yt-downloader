@@ -1,0 +1,36 @@
+/* from the saved page (inline blocks) */
+
+.video-page .video-player-wrapper { width: fit-content; max-width: 100%; }
+
+.video-page .video-player-wrapper a { width: auto; }
+
+.video-page .video-player-wrapper a img { width: auto; }
+
+.video-page .video-meta-title { font-size: 15px; line-height: 1.3; min-height: 20px; }
+
+.video-page .video-meta-sub { min-height: 18px; }
+
+.cool-trick { position: relative; }
+
+.cool-trick summary { list-style: none; }
+
+.cool-trick summary::-webkit-details-marker { display: none; }
+
+.cool-trick > div { position: absolute; top: 100%; left: 0px; z-index: 30; width: 340px; max-width: 88vw; margin-top: 4px; padding: 8px 26px 8px 11px; text-align: left; background: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.14) 0px 8px 22px; }
+
+.cool-trick-close { position: absolute; top: 3px; right: 7px; border: 0px; background: none; padding: 0px; font-size: 18px; line-height: 1; color: rgb(153, 153, 153); cursor: pointer; }
+
+.cool-trick-close:hover { color: rgb(51, 51, 51); }
+
+@media (max-width: 576px) {
+  .cool-trick > div { position: fixed; top: 64px; left: 12px; right: 12px; width: auto; max-width: none; margin-top: 0px; }
+}
+
+:root { --vh: 1vh; }
+/* additions for the local app */
+.result-row { transition: background-color .12s; }
+.result-row:hover { background-color: #f8f9fa !important; }
+.result-row .thumb { width: 96px; flex-shrink: 0; }
+.result-row .thumb img { width: 100%; height: auto; display: block; }
+#statusLine.error { color: #dc3545 !important; }
+.video-page .form-check-input:disabled { cursor: not-allowed; }

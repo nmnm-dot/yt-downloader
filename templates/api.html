@@ -1,0 +1,25 @@
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="yout-col">
+                <div class="bg-light-gray p-2 rounded-4">
+                    <div class="bg-white rounded-4 p-3" dir="ltr" style="text-align:left">
+                        <h5 class="mb-3">API</h5>
+                        <p class="small text-muted">Local only. Mutating requests need the header <code>X-Requested-With: yout-local</code>.</p>
+                        <table class="table table-sm small align-middle mb-0">
+                            <tbody>
+                                <tr><td><code>GET /api/info?url=</code></td><td>Title, duration, thumbnail, available heights, subtitle languages (or playlist entries).</td></tr>
+                                <tr><td><code>GET /api/search?q=</code></td><td>YouTube search (12 results).</td></tr>
+                                <tr><td><code>GET /api/suggest?q=</code></td><td>Search suggestions.</td></tr>
+                                <tr><td><code>POST /api/jobs</code></td><td>Start a conversion. JSON: <code>url, format (mp3|mp4|wav|gif), quality, start, end, title, artist, remove_silence, normalize, discover_metadata, h264, subtitles, subtitle_language</code>.</td></tr>
+                                <tr><td><code>GET /api/jobs/&lt;id&gt;</code></td><td>Status, progress (0–100), error.</td></tr>
+                                <tr><td><code>GET /api/jobs/&lt;id&gt;/file</code></td><td>Download the finished file.</td></tr>
+                                <tr><td><code>GET /api/downloads</code></td><td>Files already in the downloads folder.</td></tr>
+                                <tr><td><code>GET /watch?v=ID</code></td><td>Shortcut to the converter page.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

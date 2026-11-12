@@ -1,0 +1,248 @@
+
+    <div class="container video-page">
+
+        <div class="row justify-content-center">
+            <div class="yout-col">
+                <div id="pageAlert" class="alert alert-danger rounded-4 d-none" role="alert"></div>
+
+                <div class="bg-light-gray p-2 rounded-4">
+                    <div class="video-meta-row d-flex align-items-center gap-3 mb-2">
+                        <div class="bg-black rounded-4 video-player-wrapper flex-shrink-0">
+                            <a id="thumbLink" target="_blank" href="#" rel="nofollow">
+                                <div style="position: relative; display: inline-block;">
+                                    <img id="thumbImg" class="img-fluid p-2" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="320" height="180">
+                                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+
+<g id="SVGRepo_iconCarrier"> <title>youtube [#168]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]"> </path> </g> </g> </g> </g>
+
+</svg></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-meta flex-grow-1" style="min-width: 0;">
+                            <div class="video-meta-title fw-semibold text-truncate" id="videoTitleDisplay"></div>
+                            <div class="small text-muted video-meta-sub"><span id="videoDurationDisplay"></span></div>
+                            <div class="d-flex align-items-center gap-3 flex-wrap">
+                                <a id="watchLink" href="#" target="_blank" rel="nofollow" class="small text-decoration-none js-watch-cta">رصد ↗</a>
+                                <details class="cool-trick small">
+                                    <summary class="text-primary" style="cursor: pointer;">💡 انظري إلى خدعة رائعة</summary>
+                                    <div class="text-muted">
+                                        <button type="button" class="cool-trick-close" aria-label="Close">×</button>
+                                        Removing <b>ube</b> from a YouTube URL — <b><span class="highlighted">localhost</span>/watch?v=<span id="trickId">VIDEO_ID</span></b> — gets you here quicker.
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-container">
+                        <div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span></div>
+                        <div class="inputs">
+                            <div class="slider-toggle">
+                                <label for="from-input" class="d-none">Start time</label>
+                                <input id="from-input" type="text" class="form-control" value="00:00:00">
+                            </div>
+                            <div class="slider-toggle">
+                                <label for="to-input" class="d-none">End time</label>
+                                <input id="to-input" type="text" class="form-control" value="00:00:00">
+                            </div>
+                        </div>
+                    </div>
+                    <form id="recordingForm" action="/video/" autocomplete="off">
+                        <div class="bg-white rounded-4 p-3">
+                            <div class="label-column">
+                                <div class="mb-1">
+                                    <div role="group" aria-labelledby="format-label" class="d-flex flex-wrap align-items-center">
+                                        <label id="format-label" class="form-label">شكل:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="format" id="radio-mp3" value="mp3" checked="">
+                                            <label class="form-check-label" for="radio-mp3">MP3</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="format" id="radio-mp4" value="mp4">
+                                            <label class="form-check-label" for="radio-mp4">MP4</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="format" id="radio-wav" value="wav">
+                                            <label class="form-check-label" for="radio-wav">WAV</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="format" id="radio-gif" value="gif">
+                                            <label class="form-check-label" for="radio-gif">GIF</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-1 d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+                                    <label for="quality" class="form-label">جودة:</label>
+                                    <select id="quality" class="form-control" name="quality"></select>
+                                    <div class="h264 form-check ms-0 ms-sm-3 mt-2 mt-sm-0 lh-1 d-none">
+                                        <input class="form-check-input" type="checkbox" name="h264" id="h264-checkbox">
+                                        <label class="form-check-label" for="h264-checkbox">
+                                            H.264
+                                        </label>
+                                        <a data-bs-toggle="collapse" href="#h264Explanation" role="button" aria-expanded="false" aria-controls="h264Explanation">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                                        </a>
+                                        <div class="collapse mt-2" id="h264Explanation">
+                                            <small class="text-muted">قد تكون الجودة أقل ولكنها تعمل مع أجهزة Mac/iOS/أجهزة أخرى.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-1 d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+                                    <label for="title" class="form-label">عنوان:</label>
+                                    <input id="title" type="text" class="form-control form-control-md flex-grow-1" name="title" placeholder="عنوان">
+                                </div>
+                                <div class="mb-1 d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+                                    <label for="artist" class="form-label">فنان:</label>
+                                    <input id="artist" type="text" class="form-control form-control-md flex-grow-1" name="artist" placeholder="فنان">
+                                </div>
+                            </div>
+                            <div class="checkbox-container-wrapper">
+                                <div class="checkbox-container d-flex mb-1 gap-2 flex-nowrap overflow-x-scroll pb-1" style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+                                    <div class="form-check form-check-inline d-flex align-items-center p-0" style="flex-shrink: 0; scroll-snap-align: start;">
+                                        <input class="form-check-input m-0" type="checkbox" name="remove_silence" id="checkbox1" value="1">
+                                        <label class="form-check-label" for="checkbox1">إزالة الصمت</label>
+                                    </div>
+                                    <div class="form-check form-check-inline d-flex align-items-center p-0" style="flex-shrink: 0; scroll-snap-align: start;">
+                                        <input class="form-check-input m-0" type="checkbox" name="normalize" id="checkbox2" value="1">
+                                        <label class="form-check-label" for="checkbox2">تطبيع</label>
+                                    </div>
+                                    <div class="form-check form-check-inline d-flex align-items-center p-0" style="flex-shrink: 0; scroll-snap-align: start;">
+                                        <input class="form-check-input m-0" type="checkbox" id="checkbox3" name="discover_metadata" value="1" checked="">
+                                        <label class="form-check-label" for="checkbox3">اكتشف البيانات الوصفية</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subtitle-container-wrapper d-none">
+                                <div class="d-flex gap-2 flex-nowrap overflow-x-scroll pb-1" style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
+                                    <div class="form-check form-check-inline d-flex align-items-center p-0" style="flex-shrink: 0; scroll-snap-align: start;">
+                                        <label class="form-check-label me-2 mb-0" for="checkbox-add-subtitles">الترجمة التوضيحية:</label>
+                                        <input class="form-check-input m-0" type="checkbox" name="subtitles" id="checkbox-add-subtitles">
+                                    </div>
+                                    <div class="form-check form-check-inline d-flex align-items-center p-0" style="flex-shrink: 0; scroll-snap-align: start;">
+                                        <label for="subtitle_language" class="d-none">Subtitle</label>
+                                        <select id="subtitle_language" class="form-select form-select-sm" name="subtitle_language" style="min-width: 100px;">
+                                                <option value="ar">AR</option>
+                                                <option value="az">AZ</option>
+                                                <option value="ga">GA</option>
+                                                <option value="gd">GD</option>
+                                                <option value="gl">GL</option>
+                                                <option value="gu">GU</option>
+                                                <option value="ha">HA</option>
+                                                <option value="hi">HI</option>
+                                                <option value="hr">HR</option>
+                                                <option value="ht">HT</option>
+                                                <option value="hu">HU</option>
+                                                <option value="hy">HY</option>
+                                                <option value="id">ID</option>
+                                                <option value="ig">IG</option>
+                                                <option value="is">IS</option>
+                                                <option value="it">IT</option>
+                                                <option value="ja">JA</option>
+                                                <option value="ka">KA</option>
+                                                <option value="kk">KK</option>
+                                                <option value="kn">KN</option>
+                                                <option value="km">KM</option>
+                                                <option value="ko">KO</option>
+                                                <option value="ku">KU</option>
+                                                <option value="ky">KY</option>
+                                                <option value="la">LA</option>
+                                                <option value="lo">LO</option>
+                                                <option value="lt">LT</option>
+                                                <option value="lb">LB</option>
+                                                <option value="lv">LV</option>
+                                                <option value="mg">MG</option>
+                                                <option value="mi">MI</option>
+                                                <option value="mk">MK</option>
+                                                <option value="ml">ML</option>
+                                                <option value="mn">MN</option>
+                                                <option value="mr">MR</option>
+                                                <option value="ms">MS</option>
+                                                <option value="mt">MT</option>
+                                                <option value="my">MY</option>
+                                                <option value="ne">NE</option>
+                                                <option value="nl">NL</option>
+                                                <option value="no">NO</option>
+                                                <option value="ny">NY</option>
+                                                <option value="pa">PA</option>
+                                                <option value="pl">PL</option>
+                                                <option value="ps">PS</option>
+                                                <option value="pt">PT</option>
+                                                <option value="ro">RO</option>
+                                                <option value="ru">RU</option>
+                                                <option value="sd">SD</option>
+                                                <option value="si">SI</option>
+                                                <option value="sk">SK</option>
+                                                <option value="sl">SL</option>
+                                                <option value="sm">SM</option>
+                                                <option value="sn">SN</option>
+                                                <option value="so">SO</option>
+                                                <option value="sq">SQ</option>
+                                                <option value="sr">SR</option>
+                                                <option value="st">ST</option>
+                                                <option value="su">SU</option>
+                                                <option value="sv">SV</option>
+                                                <option value="sw">SW</option>
+                                                <option value="ta">TA</option>
+                                                <option value="te">TE</option>
+                                                <option value="tg">TG</option>
+                                                <option value="th">TH</option>
+                                                <option value="tl">TL</option>
+                                                <option value="tr">TR</option>
+                                                <option value="uk">UK</option>
+                                                <option value="ur">UR</option>
+                                                <option value="uz">UZ</option>
+                                                <option value="vi">VI</option>
+                                                <option value="xh">XH</option>
+                                                <option value="yi">YI</option>
+                                                <option value="yo">YO</option>
+                                                <option value="zu">ZU</option>
+                                                <option value="zh">ZH</option>
+                                                <option value="af">AF</option>
+                                                <option value="am">AM</option>
+                                                <option value="be">BE</option>
+                                                <option value="bg">BG</option>
+                                                <option value="bn">BN</option>
+                                                <option value="bs">BS</option>
+                                                <option value="ca">CA</option>
+                                                <option value="co">CO</option>
+                                                <option value="cs">CS</option>
+                                                <option value="cy">CY</option>
+                                                <option value="da">DA</option>
+                                                <option value="de">DE</option>
+                                                <option value="el">EL</option>
+                                                <option value="en" selected>EN</option>
+                                                <option value="eo">EO</option>
+                                                <option value="es">ES</option>
+                                                <option value="et">ET</option>
+                                                <option value="eu">EU</option>
+                                                <option value="fa">FA</option>
+                                                <option value="fi">FI</option>
+                                                <option value="fr">FR</option>
+                                                <option value="fy">FY</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-wrapper pt-2">
+                                <button type="submit" class="btn btn-lg btn-block btn-primary rounded-pill w-100" id="format-shift-btn">
+                                    تحويل التنسيق إلى <span>MP3</span></button>
+                            </div>
+                            <div id="progressWrap" class="d-none pt-2">
+                                <div class="progress" style="height: 6px;"><div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%"></div></div>
+                            </div>
+                            <div id="statusLine" class="text-center pt-2 small text-muted" aria-live="polite"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script defer src="/static/js/video.js"></script>
